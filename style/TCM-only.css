@@ -1,0 +1,5 @@
+body{background-image:url("../rsc/background.jpg");background-attachment: fixed;}
+
+.w3-darker-grey,.w3-hover-darker-grey:hover,.w3-darker-gray,.w3-hover-darker-gray:hover{color:#fff!important;background-color:#252525!important}
+
+.site-content{width:70%; margin-left:15%; padding:2%;}
