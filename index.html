@@ -19,19 +19,39 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!-- The Fixed Double-Menu Bar -->
-		
-		<div id="doubleMenu" class="site-content" style="position:fixed;height:10%;z-index:20;margin-bottom:0.001%;">
+		<!--style="position:fixed;height:15%;z-index:20;margin-bottom:0.001%;"-->
+		<nav id="doubleMenu" class="site-content-nav navbar navbar-inverse navbar-fixed-top" >
 			<div id="mainMenu" class="w3-container w3-darker-grey light-padding"></div>
 			<!-- some bootstrap like scrolling submenu. Note : the submenu is page specific while the main menu is shared by all the pages-->
-			<div id="subMenu" class="w3-container w3-dark-grey light-padding"></div>
-		</div>
+			<div id="subMenu" class="w3-dark-grey">
+				<ul class="nav navbar-nav w3-dark-grey">
+					<li><a href="#problemContent">Section 1</a></li>
+					<li><a href="#solutionContent">Section2</a></li>
+					<li><div class="w3-dark-grey" style="width:100%;height:100%;"></div></li>
+				</ul>
+			</div>
+		</nav>
 		
 		<!-- Main content div -->
-		<div id="contentHome" class="w3-container w3-grey site-content" style="position:absolute;top:20%;">
-			<h1> REGLAGES MAGGLE </h1>
-			
+		<!-- Thought of the day for the content : DO NOT HESITATE TO GO AS _MARKETISH_ AS POSSIBLE - don't believe me ? check the moodle page -->
+		<!-- style="position:absolute;top:20%;" -->
+		<div id="contentHome" class="w3-grey site-content">
+			<!-- Problem + Stakes go here -->
+			<div id="problemContent" class="w3-black w3-container">
+				<h1> Changer la dynamique NewSpace </h1>
+				<p> some content <p>
+				<br/><br/><br/><br/><br/><br/><br/><br/>
+				</p> some more content </p>
+			</div>
+			<!-- Solution + Use Case goes here -->
+			<div id="solutionContent" class="w3-grey w3-container">
+				<h1> La Révolution TCM - FleetⓇ </h1>
+				<p>
+					Tachyon Construction Machines a la solution à ce problème avec TCM - FleetⓇ   
+				</p>
+			</div>
 			<div id="test" class="w3-grey" style="height:300px;"> </div>
 			<div id="test1" class="w3-black" style="height:300px;"> </div>
 			<div id="test2" class="w3-grey" style="height:300px;"> </div>
