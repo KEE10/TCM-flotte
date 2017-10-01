@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="../scripts/jquery-min.js"></script>
+		<script>  
+			$(function(){
+				$("#mainMenu").load("menu.html"); 
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- W3 CSS -->
+		<link rel="stylesheet" href="../style/W3.css">
+		<link rel="stylesheet" href="../style/TCM-only.css">
+		<!-- BootStrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<!-- Latest compiled JavaScript -->
+		<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!-- The Fixed Double-Menu Bar -->
+		<!--style="position:fixed;height:15%;z-index:20;margin-bottom:0.001%;"-->
+		<nav id="doubleMenu" class="site-content-nav navbar navbar-inverse navbar-fixed-top" >
+			<div id="mainMenu" class="w3-container w3-darker-grey light-padding"></div>
+			<!-- some bootstrap like scrolling submenu. Note : the submenu is page specific while the main menu is shared by all the pages-->
+			<div id="subMenu" class="w3-dark-grey">
+				<ul class="nav navbar-nav w3-dark-grey">
+					<li><a href="#problemContent">Section 1</a></li>
+					<li><a href="#solutionContent">Section 2</a></li>
+					<li><a href="#">Section 3</a> </li>
+					<li><div class="w3-dark-grey" style="width:100%;height:100%;"></div></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- Main content div -->
+		<!-- Thought of the day for the content : DO NOT HESITATE TO GO AS _MARKETISH_ AS POSSIBLE - don't believe me ? check the moodle page -->
+		<!-- style="position:absolute;top:20%;" -->
+		<div id="contentHome" class="w3-grey site-content">
+			<!-- Problem + Stakes go here -->
+			<div id="problemContent" class="w3-black w3-container">
+				<h1> Changer la dynamique NewSpace </h1>
+				<img src="../rsc/stockSat1.jpg" class="img-rounded" alt="satellite stock" height="50%" width="50%" style="float:left;margin:1%;"/> 
+				<!-- PROBLEMATIQUE -->
+				<p class="just"> 
+					Depuis les années 2010s, le segment privé du secteur spatial connaît une explosion sans précédent. Néanmoins, 
+					le developpement de ce secteur reste principalement confiné aux satellites de télécommunication, à quelques rares
+					exceptions près. Le secteur possède pourtant un énorme potentiel pour l'instant inexploité.
+				</p>
+				<p class="just"> 
+					La raison derrière cette sous-exploitation est le coût prohibitif de mise à poste des satellites. En effet, après leur
+					assemblage sur Terre, il faut les arracher au puit gravitationnel qu'est notre planète.Des centaines de tonnes de carburant sont 
+					consommés pour amener un seul satellite à sa propre position. La majeure partie de ce carburant est consommé durant les 
+					5 premières minutes du lancement.
+				</p>
+				<p class="just">
+					Imaginez quelques instants un monde où ces exhorbitantes minutes de lancement n'existent plus. Un monde ou mettre à poste un satellite 
+					n'est plus qu'une simple question de temps. Un monde ou il n'est plus necessaire de désorbiter des satellites par manque de carburant. 
+					Ce monde est plus proche de vous que vous ne le croyez. Ce monde, c'est celui que notre entreprise se propose d'offrir à l'humanité.
+				</p>
+				<!-- ENJEUX -->
+				<p class="just">
+					Dans ce monde, les merveilles de l'espace seront à portée de main. Toutes les ressources de la ceinture d'asteroides disponibles, 
+					abolissant le concept de pénurie. Mars devient la porte d'à côté. Les missions scientifiques et l'observation de la Terre se font
+					plus aisés, moins couteuses et aussi simple que l'envoi d'un plan. Toutes les idées et innovations du secteur sont enfin libres
+					du frein que représente le prix de chaque lanceur.
+				</p>
+			</div>
+			<!-- Solution + Use Case goes here -->
+			<div id="solutionContent" class="w3-darker-grey w3-container">
+				<h1> La Révolution TCM - FleetⓇ </h1>
+				<!-- SOLUTION -->
+				<!-- TODO: IMAGE EN MODE FLOAT RIGHT -->
+				<p class="just">
+					Tachyon Construction Machines a la solution à ce problème avec TCM - FleetⓇ. Tirant profit des leçons de tous nos prédécesseur de
+					la course à l'espace et en nous appuyant sur des technologies de pointes perfectionnées à l'extrême, nous avons conçu une flotte
+					d'engin spatiaux.
+				</p>
+				<!-- SCENARIO D'UTILISATION -->
+			</div>
+			<div id="test" class="w3-grey" style="height:300px;"> </div>
+			<div id="test1" class="w3-black" style="height:300px;"> </div>
+			<div id="test2" class="w3-grey" style="height:300px;"> </div>
+		</div>
+		
+
+	</body>
+</html>
